@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<head>
+  <title>Sir Tweets-a-bit</title>
+</head>
+
+<body>
+ <div class="navigation">
+<nav>
+<ul>
+    <a href='index.html'><li>Home</li></a>
+    <a href='blog.html'><li>Blog</li></a>
+    <a href='stories.html'><li>Stories</li></a>
+    <a href='twitter.html'><li>Twitter</li></a>
+</ul>
+</nav>
+ </div>
+<div class="header">
+   <div class="header-text">
+<h1>Everything @aidno Twitter</h1>
+<h2>The past is a dog-eared textbook. The future's still wrapped in cellophane...
+</br>That's why it's so suffocating to think about it</h2>
+   </div>
+</div>
+<p class="twitter">
+    <a class="twitter-timeline tw-align-center" data-width="60%" data-height="1000" href="https://twitter.com/aidno">Tweets by aidno</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
+
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script type= 'text/javascript' src= 'main.js'></script>
+</body>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+</html>
