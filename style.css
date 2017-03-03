@@ -18,12 +18,13 @@ a {
 }
  
 body {
-  background-color: lightcyan;
+  background-color: #5882FA;
 }
 
 h1 {
     font-size: 48px;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .header-text {
@@ -88,18 +89,22 @@ p {
 .button {
   display: block;
   height: 100%;
-  width: 75%;
   position: relative;
   padding: 10px;
   margin: auto;
   font-family: verdana;
   text-align: center;
-  width: 5%;
+  width: 15%;
   background: #666;
   box-shadow: 1px 1px 1px grey;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .twitter {
   text-align: center;
   }
+
+.buttonclicked {
+  background: yellow;
+}
