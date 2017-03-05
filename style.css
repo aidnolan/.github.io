@@ -18,7 +18,7 @@ a {
 }
  
 body {
-  background-color: #A9D0F5;
+  background-color: #A9D0F5 !important;
 }
 
 h1 {
@@ -26,17 +26,6 @@ h1 {
     background-color: transparent;
     cursor: pointer;
     display: none;
-}
-
-.header-text {
-  margin: 0 auto; 
-  font-family: Trebuchet MS, Arial, sans-serif;
-  position: relative;
-  text-align: center;
-  top: 40%;
-  width: 75%;
-  color: white;
-  background-color: transparent;
 }
 
 h2 {
@@ -79,12 +68,23 @@ p {
   color: #666666;
   display: inline-block;
   font-family: 'Roboto', sans-serif;
-  font-size: 0.8em;
+  font-size: 0.7em;
   font-weight: 100;
   letter-spacing: 0.05em;
   margin: 0;
   text-transform: uppercase;
   float: left;
+}
+
+.header-text {
+  margin: 0 auto; 
+  font-family: Trebuchet MS, Arial, sans-serif;
+  position: relative;
+  text-align: center;
+  top: 40%;
+  width: 75%;
+  color: white;
+  background-color: transparent;
 }
 
 .button {
