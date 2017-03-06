@@ -33,6 +33,10 @@ p {
     font-family: verdana;
 }
 
+nav ul li {
+  cursor: pointer;
+}
+
 .header {
   background: url('DSC01992.JPG');
   height: 400px;
