@@ -6,16 +6,6 @@
 a {
   border: 0px;
 }
-
-.header {
-  background: url('DSC01992.JPG');
-  height: 400px;
-  width: 100%;
-  background-position: bottom center;
-  background-size: cover;
-  padding: 0px;
-  margin: auto;
-}
  
 body {
   background-color: #A9D0F5 !important;
@@ -41,6 +31,16 @@ p {
     padding: 30px;
     margin: auto;
     font-family: verdana;
+}
+
+.header {
+  background: url('DSC01992.JPG');
+  height: 400px;
+  width: 100%;
+  background-position: bottom center;
+  background-size: cover;
+  padding: 0px;
+  margin: auto;
 }
 
 .navigation {
@@ -102,7 +102,7 @@ p {
   cursor: pointer;
 }
 
-.twitter {
+#twitter {
   text-align: center;
   }
 
