@@ -38,7 +38,7 @@ while(invalid === true) {
 var name = prompt("Please choose a name for your " + animal + ": ");
 name = firstCap(name);
 
-alert("Hello " + name + "!");
+alert("It's nice to meet you " + name + "!");
 
 
 while (invalid === false) {
