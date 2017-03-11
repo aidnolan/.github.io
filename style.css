@@ -14,7 +14,6 @@ body {
 h1 {
     font-size: 48px;
     background-color: transparent;
-    cursor: pointer;
     display: none;
 }
 
@@ -82,7 +81,7 @@ nav ul li {
 
 .header-text {
   margin: 0 auto; 
-  font-family: Trebuchet MS, Arial, sans-serif;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
   position: relative;
   text-align: center;
   top: 40%;
@@ -91,7 +90,7 @@ nav ul li {
   background-color: transparent;
 }
 
-.button {
+#button1 {
   display: block;
   height: 100%;
   position: relative;
@@ -106,10 +105,31 @@ nav ul li {
   cursor: pointer;
 }
 
+#button1.buttonclicked {
+  background: yellow;
+
+}
+
 #twitter {
   text-align: center;
-  }
+}
 
-.buttonclicked {
-  background: yellow;
+.hide {
+  display: none;
+}
+
+#sloth {
+  cursor: pointer;
+}
+
+#fox {
+  cursor: pointer;
+}
+
+#dog {
+  cursor: pointer;
+}
+
+#cat {
+  cursor: pointer;
 }
