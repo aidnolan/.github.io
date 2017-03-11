@@ -1,26 +1,102 @@
-function Animals (animal, name, action) {
-	this.animal = animal;
-	this.name = name;
-	this.action = action;
-}
-
+// function Animals (animal, name, action) {
+// 	this.animal = animal;
+// 	this.name = name;
+// 	this.action = action;
+// }
 var slothID = document.getElementById("sloth");
-var inputName = document.getElementById("typedInput").value;
-var nameString = document.getElementById("typedBox")
+var foxID = document.getElementById("fox");
+var dogID = document.getElementById("dog");
+var catID = document.getElementById("cat");
+var inputName = document.getElementById("typedInput");
+var nameString = document.getElementById("typedBox");
+var pressButton2 = document.getElementById("button2");
+var pressButton3 = document.getElementById("button3");
+var pressButton4 = document.getElementById("button4");
+var enterName = document.getElementById("nameEntry");
+var nameRevealer = document.getElementById("nameReveal")
 
-var sloth = new Animals("sloth", inputName, "slinky ",);
-var fox = new Animals("fox", inputName, "slinky ");
-var dog = new Animals("dog", inputName, "lazy ");
-var cat = new Animals("cat", inputName, "cranky ");
 
+slothID.addEventListener("click", function() {
+	foxID.style.display = "none";
+	dogID.style.display = "none";
+	catID.style.display = "none";
+	enterName.style.display = "block";
+	pressButton2.style.display = "inline-block";
+	pressButton3.style.display = "inline-block";
+})
 
-function alertMe (animal) {
-	alert('You have chosen the ' + this.action + this.animal)
+foxID.addEventListener("click", function() {
+	slothID.style.display = "none";
+	dogID.style.display = "none";
+	catID.style.display = "none"; 
+	enterName.style.display = "block";
+	pressButton2.style.display = "inline-block";
+	pressButton3.style.display = "inline-block";
+})
+
+dogID.addEventListener("click", function() {
+	slothID.style.display = "none";
+	foxID.style.display = "none";
+	catID.style.display = "none"; 
+	enterName.style.display = "block";
+	pressButton2.style.display = "inline-block";
+	pressButton3.style.display = "inline-block";
+
+})
+
+catID.addEventListener("click", function() {
+	slothID.style.display = "none"; 
+	foxID.style.display = "none";
+	dogID.style.display = "none";
+	enterName.style.display = "block";
+	pressButton2.style.display = "inline-block";
+	pressButton3.style.display = "inline-block";
+})
+
+pressButton2.addEventListener("click", function() {
+	nameRevealer.style.display = "block";
+	enterName.style.display = "none";
+	pressButton3.style.display = "inline-block";
+	pressButton2.style.display = "none";
+	pressButton3.style.display = "inline-block";
+	pressButton4.style.display = "inline-block";
+
+})
+
+pressButton3.addEventListener("click", function() {
+	slothID.style.display = ""; 
+	foxID.style.display = "";
+	dogID.style.display = "";
+	catID.style.display = "";
+	enterName.style.display = "none";
+	nameRevealer.style.display = "none";
+	pressButton2.style.display = "none";
+	pressButton3.style.display = "none";
+	inputName.value = "";
+})
+
+function firstCap(str) {
+    var firstLetter = str.substr(0, 1);
+    return firstLetter.toUpperCase() + str.substr(1);
+}
+
+inputName.addEventListener("input", add);
+
+function add() {
+	var x = inputName.value;
+	typedBox.innerHTML = firstCap(x);
 }
 
 
 
-slothID.onclick = alertMe;
+
+// function alertMe (animal) {
+// 	alert('You have chosen the ' + this.action + this.animal)
+// }
+
+
+
+// slothID.onclick = alertMe;
 
 
 // function Animals = {

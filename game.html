@@ -21,24 +21,40 @@
   <div class="header"> 
     <div class="header-text">
       <h1>Animal game</h1>
-      <h2>Do you dare to play?</h2>
+      <h2>Work in progress</h2>
     </div>
   </div>
  
+  <p>
+	Please choose your animal:<br><br>
+		<img id="sloth" src="http://static.ddmcdn.com/gif/11-_sloth_waving.jpg" height= "175" width="250">
+		<img id="fox" src="http://images.earthtouchnews.com/media/1426320/zen_fox_grass_2_2015-09-14.jpg" height="175" width="250">
+		<img id="dog" src="http://www.dogster.com/wp-content/uploads/2015/05/lazy-dog-2_1.jpg" height="175" width="250" >
+		<img id="cat" src="http://delighten.co.uk/wp-content/uploads/2016/01/grumpy-cat.jpg" height="175" width="250" >
+  </p>
 
- <p>Please choose your animal: </p>
+  <p id='nameEntry'>
+		Please enter your animal's name:<br><br>
+		<input id="typedInput" size="30" placeholder="Enter your animal's name here">
+  </p>
 
-<img id="sloth" src="http://static.ddmcdn.com/gif/11-_sloth_waving.jpg" height= "175" width="250">
-<img id="fox" src="http://images.earthtouchnews.com/media/1426320/zen_fox_grass_2_2015-09-14.jpg" height="175" width="250">
-<img id="dog" src="http://www.dogster.com/wp-content/uploads/2015/05/lazy-dog-2_1.jpg" height="175" width="250" >
-<img id="cat" src="http://delighten.co.uk/wp-content/uploads/2016/01/grumpy-cat.jpg" height="175" width="250" >
+  <p id= "nameReveal">
+		Hey there <span id="typedBox"></span>!
+  </p> 
 
-<p id='nameEntry'>Please choose your animal's name: <span id="typedBox"></span><input id="typedInput" type='text'></p> 
-<p><input type="button" value="Submit" onclick="insert()" /></p>
+  <p id="button2">
+		Submit
+  </p><br />
+  <p id="button3">
+  		Reset
+  </p><br />
+  <p id="button4">
+  		Undo Name
+  </p>
 
-<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-<script type= 'text/javascript' src= 'main.js'></script>
-<script type= 'text/javascript' src= 'game.js'></script>
+  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+  <script type= 'text/javascript' src= 'main.js'></script>
+  <script type= 'text/javascript' src= 'game.js'></script>
 </body>
 
 
