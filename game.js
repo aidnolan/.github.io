@@ -9,11 +9,12 @@ var dogID = document.getElementById("dog");
 var catID = document.getElementById("cat");
 var inputName = document.getElementById("typedInput");
 var nameString = document.getElementById("typedBox");
-var pressButton2 = document.getElementById("button2");
-var pressButton3 = document.getElementById("button3");
-var pressButton4 = document.getElementById("button4");
+var submitButton = document.getElementById("button2");
+var resetButton = document.getElementById("button3");
+var previousButtonButton = document.getElementById("button4");
 var enterName = document.getElementById("nameEntry");
 var nameRevealer = document.getElementById("nameReveal")
+var nextButton = document.getElementById("button5");
 
 
 slothID.addEventListener("click", function() {
@@ -21,8 +22,8 @@ slothID.addEventListener("click", function() {
 	dogID.style.display = "none";
 	catID.style.display = "none";
 	enterName.style.display = "block";
-	pressButton2.style.display = "inline-block";
-	pressButton3.style.display = "inline-block";
+	submitButton.style.display = "inline-block";
+	resetButton.style.display = "inline-block";
 })
 
 foxID.addEventListener("click", function() {
@@ -30,8 +31,8 @@ foxID.addEventListener("click", function() {
 	dogID.style.display = "none";
 	catID.style.display = "none"; 
 	enterName.style.display = "block";
-	pressButton2.style.display = "inline-block";
-	pressButton3.style.display = "inline-block";
+	submitButton.style.display = "inline-block";
+	resetButton.style.display = "inline-block";
 })
 
 dogID.addEventListener("click", function() {
@@ -39,8 +40,8 @@ dogID.addEventListener("click", function() {
 	foxID.style.display = "none";
 	catID.style.display = "none"; 
 	enterName.style.display = "block";
-	pressButton2.style.display = "inline-block";
-	pressButton3.style.display = "inline-block";
+	submitButton.style.display = "inline-block";
+	resetButton.style.display = "inline-block";
 
 })
 
@@ -49,30 +50,46 @@ catID.addEventListener("click", function() {
 	foxID.style.display = "none";
 	dogID.style.display = "none";
 	enterName.style.display = "block";
-	pressButton2.style.display = "inline-block";
-	pressButton3.style.display = "inline-block";
+	submitButton.style.display = "inline-block";
+	resetButton.style.display = "inline-block";
 })
 
-pressButton2.addEventListener("click", function() {
+submitButton.addEventListener("click", function() {
+	if (typedBox.innerHTML === "") {
+		alert("Please enter a name!");
+	} else {
 	nameRevealer.style.display = "block";
 	enterName.style.display = "none";
-	pressButton3.style.display = "inline-block";
-	pressButton2.style.display = "none";
-	pressButton3.style.display = "inline-block";
-	pressButton4.style.display = "inline-block";
-
+	resetButton.style.display = "inline-block";
+	submitButton.style.display = "none";
+	resetButton.style.display = "inline-block";
+	previousButtonButton.style.display = "inline-block";
+	nextButton.style.display = "inline-block"
+	}
 })
 
-pressButton3.addEventListener("click", function() {
+resetButton.addEventListener("click", function() {
 	slothID.style.display = ""; 
 	foxID.style.display = "";
 	dogID.style.display = "";
 	catID.style.display = "";
 	enterName.style.display = "none";
 	nameRevealer.style.display = "none";
-	pressButton2.style.display = "none";
-	pressButton3.style.display = "none";
+	submitButton.style.display = "none";
+	resetButton.style.display = "none";
+	previousButtonButton.style.display = "none";
 	inputName.value = "";
+	typedBox.innerHTML = "";
+	nextButton.style.display = "none";	
+})
+
+previousButtonButton.addEventListener("click", function() {
+	previousButtonButton.style.display = "none";
+	inputName.value = "";
+	typedBox.innerHTML = "";
+	nameRevealer.style.display = "";
+	enterName.style.display = "block";
+	submitButton.style.display = "inline-block";
 })
 
 function firstCap(str) {

@@ -22,7 +22,7 @@ h2 {
     background-color: transparent;
 }
 
-p {
+.p {
     display: block;
     height: 100%;
     width: 75%;
@@ -38,6 +38,11 @@ nav ul li {
 
 input {
   font-size: 1.5em;
+}
+
+img {
+  border-radius: 60%;
+  padding: 1em 0.7em;
 }
 
 .header {
@@ -94,8 +99,14 @@ input {
   background-color: transparent;
 }
 
-.picChoices {
-  /*display: none;*/
+.gameNav {
+  display: block;
+  height: 100%;
+  width: 75%;
+  position: relative;
+  padding: 30px;
+  margin: auto;
+  font-family: verdana;
 }
 
 #button1 {
@@ -118,6 +129,10 @@ input {
 
 }
 
+#buttonBox {
+  padding: 0;
+}
+
 #button2 {
   display: none;
   height: 100%;
@@ -126,12 +141,11 @@ input {
   margin: auto;
   font-family: verdana;
   text-align: center;
-  width: 15%;
+  width: 10%;
   background: #81BEF7;
   box-shadow: 1px 1px 1px grey;
   border-radius: 10px;
-  cursor: pointer;
-  margin-left: 13%;
+  margin-left: 1%;
 }
 
 #button3 {
@@ -142,12 +156,11 @@ input {
   margin: auto;
   font-family: verdana;
   text-align: center;
-  width: 15%;
+  width: 10%;
   background: #81BEF7;
   box-shadow: 1px 1px 1px grey;
   border-radius: 10px;
-  cursor: pointer;
-  margin-left: 13%;
+  margin-left: 1%;
   margin-top: 1% ;
 }
 
@@ -159,12 +172,27 @@ input {
   margin: auto;
   font-family: verdana;
   text-align: center;
-  width: 15%;
+  width: 10%;
   background: #81BEF7;
   box-shadow: 1px 1px 1px grey;
   border-radius: 10px;
-  cursor: pointer;
-  margin-left: 13%;
+  margin-left: 1%;
+  margin-top: 1% ;
+}
+
+#button5 {
+  display: none;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+  margin: auto;
+  font-family: verdana;
+  text-align: center;
+  width: 10%;
+  background: #81BEF7;
+  box-shadow: 1px 1px 1px grey;
+  border-radius: 10px;
+  margin-left: 1%;
   margin-top: 1% ;
 }
 
@@ -194,8 +222,10 @@ input {
 
 #nameReveal {
   display: none;
+  padding: 1em;
 }
 
 #nameEntry {
   display: none;
+  padding: 1em;
 }

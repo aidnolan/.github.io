@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html>
-	<link rel="stylesheet" type="text/css" href="style.css">
-<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+	<head>
   
-  <title>Welcome</title>
-</head>
+  	  <title>Welcome</title>
+	</head>
   
-<body>
-  <div class="navigation">
-    <nav>
-      <ul>
-        <a href="index.html"><li>Home</li></a>
-        <a href='blog.html'><li>Blog</li></a>
-        <a href='stories.html'><li>Stories</li></a>
-        <a href='twitter.html'><li>Twitter</li></a>
-        <li>Game</li>
-      </ul>
-    </nav> 
-  </div>
-  <div class="header"> 
-    <div class="header-text">
-      <h1>Animal game</h1>
-      <h2>Work in progress</h2>
-    </div>
-  </div>
- 
-  <p>
-	Please choose your animal:<br><br>
-		<img id="sloth" src="http://static.ddmcdn.com/gif/11-_sloth_waving.jpg" height= "175" width="250">
-		<img id="fox" src="http://images.earthtouchnews.com/media/1426320/zen_fox_grass_2_2015-09-14.jpg" height="175" width="250">
-		<img id="dog" src="http://www.dogster.com/wp-content/uploads/2015/05/lazy-dog-2_1.jpg" height="175" width="250" >
-		<img id="cat" src="http://delighten.co.uk/wp-content/uploads/2016/01/grumpy-cat.jpg" height="175" width="250" >
-  </p>
+	<body>
+	  <div class="navigation">
+	    <nav>
+	      <ul>
+	        <a href="index.html"><li>Home</li></a>
+	        <a href='blog.html'><li>Blog</li></a>
+	        <a href='stories.html'><li>Stories</li></a>
+	        <a href='twitter.html'><li>Twitter</li></a>
+	        <li>Game</li>
+	      </ul>
+	    </nav> 
+	  </div>
+	  <div class="header"> 
+	    <div class="header-text">
+	      <h1>Animal game</h1>
+	      <h2>Work in progress</h2>
+	    </div>
+	  </div>
+	 
+	<div class="p">
+		<div>
+			Please choose your animal:<br>
+			<img id="sloth" src="http://static.ddmcdn.com/gif/11-_sloth_waving.jpg" height= "175" width="250">
+			<img id="fox" src="http://images.earthtouchnews.com/media/1426320/zen_fox_grass_2_2015-09-14.jpg" height="175" width="250">
+			<img id="dog" src="http://www.dogster.com/wp-content/uploads/2015/05/lazy-dog-2_1.jpg" height="175" width="250" >
+			<img id="cat" src="http://delighten.co.uk/wp-content/uploads/2016/01/grumpy-cat.jpg" height="175" width="250" >
+	  	</div>
+	  
+	  	<div id='nameEntry'>
+			<input id="typedInput" size="30" placeholder="Enter your animal's name here">
+	    </div>
 
-  <p id='nameEntry'>
-		Please enter your animal's name:<br><br>
-		<input id="typedInput" size="30" placeholder="Enter your animal's name here">
-  </p>
-
-  <p id= "nameReveal">
-		Hey there <span id="typedBox"></span>!
-  </p> 
-
-  <p id="button2">
-		Submit
-  </p><br />
-  <p id="button3">
-  		Reset
-  </p><br />
-  <p id="button4">
-  		Undo Name
-  </p>
-
-  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-  <script type= 'text/javascript' src= 'main.js'></script>
-  <script type= 'text/javascript' src= 'game.js'></script>
-</body>
-
-
-
+	  
+		<div id= "nameReveal">
+			*<span id="typedBox"></span> leaps into your arms*
+		</div>
+	  	<nav>
+		  <ul id="buttonBox">
+			<li id="button5">
+				Next
+			</li>
+			<li id="button2">
+				Submit
+			</li>
+			<li id="button4">
+			  	Previous
+			</li>
+			<li id="button3">
+			  	Reset
+			</li>
+		  </ul>
+		</nav>
+	</div>
+	  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+ 	  <script type= 'text/javascript' src= 'main.js'></script>
+	  <script type= 'text/javascript' src= 'game.js'></script>
+	</body>
 
 </html>
