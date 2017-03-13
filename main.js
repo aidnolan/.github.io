@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('h1').fadeIn('slow');
+	$('h1, h2').fadeIn('slow');
  });
     // $('h1').click(function() {
     //     $(this).slideUp(1000).slideDown(1000);

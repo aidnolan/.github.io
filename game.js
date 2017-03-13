@@ -104,16 +104,21 @@ function add() {
 	typedBox.innerHTML = firstCap(x);
 }
 
-
-
-
-// function alertMe (animal) {
-// 	alert('You have chosen the ' + this.action + this.animal)
+// function picLink() {
+// 	var picId = this.attributes['data-img'].value;
+// 	var pic = document.getElementById(picId);
+// 	picId.style.display = "none";
+// 	dogID.style.display = "none";
+// 	catID.style.display = "none";
+// 	enterName.style.display = "block";
+// 	submitButton.style.display = "inline-block";
+// 	resetButton.style.display = "inline-block";
 // }
 
 
 
-// slothID.onclick = alertMe;
+
+
 
 
 // function Animals = {
