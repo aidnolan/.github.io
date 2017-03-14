@@ -101,6 +101,7 @@ img {
 }
 
 .gameArea {
+    /*align-content: center;*/
     border: 1px dashed;
     display: block;
     height: 100%;
@@ -109,16 +110,6 @@ img {
     padding: 30px;
     margin: auto;
     font-family: verdana;
-}
-
-.gameNav {
-  display: block;
-  height: 100%;
-  width: 75%;
-  position: relative;
-  padding: 30px;
-  margin: auto;
-  font-family: verdana;
 }
 
 .hide {
@@ -146,10 +137,10 @@ img {
 }
 
 #buttonBox {
-  padding: 0;
+  padding: 1%;
 }
 
-#button2 {
+#submitBtn {
   display: none;
   height: 100%;
   position: relative;
@@ -162,25 +153,10 @@ img {
   box-shadow: 1px 1px 1px grey;
   border-radius: 10px;
   margin-left: 1%;
+  margin-top: 1%;
 }
 
-#button3 {
-  display: none;
-  height: 100%;
-  position: relative;
-  padding: 10px;
-  margin: auto;
-  font-family: verdana;
-  text-align: center;
-  width: 10%;
-  background: #81BEF7;
-  box-shadow: 1px 1px 1px grey;
-  border-radius: 10px;
-  margin-left: 1%;
-  margin-top: 1% ;
-}
-
-#button4 {
+#resetBtn {
   display: none;
   height: 100%;
   position: relative;
@@ -196,7 +172,23 @@ img {
   margin-top: 1% ;
 }
 
-#button5 {
+#previousBtn {
+  display: none;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+  margin: auto;
+  font-family: verdana;
+  text-align: center;
+  width: 10%;
+  background: #81BEF7;
+  box-shadow: 1px 1px 1px grey;
+  border-radius: 10px;
+  margin-left: 1%;
+  margin-top: 1% ;
+}
+
+#nextBtn {
   display: none;
   height: 100%;
   position: relative;
@@ -234,7 +226,6 @@ img {
 
 #nameReveal {
   display: none;
-  text-align: left;
 }
 
 #nameEntry {

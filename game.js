@@ -9,50 +9,19 @@ var dogID = document.getElementById("dog");
 var catID = document.getElementById("cat");
 var inputName = document.getElementById("typedInput");
 var nameString = document.getElementById("typedBox");
-var submitButton = document.getElementById("button2");
-var resetButton = document.getElementById("button3");
-var previousButtonButton = document.getElementById("button4");
+var submitButton = document.getElementById("submitBtn");
+var resetButton = document.getElementById("resetBtn");
+var previousButton = document.getElementById("previousBtn");
 var enterName = document.getElementById("nameEntry");
 var nameRevealer = document.getElementById("nameReveal")
-var nextButton = document.getElementById("button5");
+var nextButton = document.getElementById("nextBtn");
 
 
-slothID.addEventListener("click", function() {
-	foxID.style.display = "none";
-	dogID.style.display = "none";
-	catID.style.display = "none";
-	enterName.style.display = "block";
-	submitButton.style.display = "inline-block";
-	resetButton.style.display = "inline-block";
-})
+slothID.addEventListener("click", picToggle);
+foxID.addEventListener("click", picToggle);
+dogID.addEventListener("click", picToggle);
+catID.addEventListener("click", picToggle);
 
-foxID.addEventListener("click", function() {
-	slothID.style.display = "none";
-	dogID.style.display = "none";
-	catID.style.display = "none"; 
-	enterName.style.display = "block";
-	submitButton.style.display = "inline-block";
-	resetButton.style.display = "inline-block";
-})
-
-dogID.addEventListener("click", function() {
-	slothID.style.display = "none";
-	foxID.style.display = "none";
-	catID.style.display = "none"; 
-	enterName.style.display = "block";
-	submitButton.style.display = "inline-block";
-	resetButton.style.display = "inline-block";
-
-})
-
-catID.addEventListener("click", function() {
-	slothID.style.display = "none"; 
-	foxID.style.display = "none";
-	dogID.style.display = "none";
-	enterName.style.display = "block";
-	submitButton.style.display = "inline-block";
-	resetButton.style.display = "inline-block";
-})
 
 submitButton.addEventListener("click", function() {
 	if (typedBox.innerHTML === "") {
@@ -63,7 +32,7 @@ submitButton.addEventListener("click", function() {
 	resetButton.style.display = "inline-block";
 	submitButton.style.display = "none";
 	resetButton.style.display = "inline-block";
-	previousButtonButton.style.display = "inline-block";
+	previousButton.style.display = "inline-block";
 	nextButton.style.display = "inline-block"
 	}
 })
@@ -77,14 +46,14 @@ resetButton.addEventListener("click", function() {
 	nameRevealer.style.display = "none";
 	submitButton.style.display = "none";
 	resetButton.style.display = "none";
-	previousButtonButton.style.display = "none";
+	previousButton.style.display = "none";
 	inputName.value = "";
 	typedBox.innerHTML = "";
 	nextButton.style.display = "none";	
 })
 
-previousButtonButton.addEventListener("click", function() {
-	previousButtonButton.style.display = "none";
+previousButton.addEventListener("click", function() {
+	previousButton.style.display = "none";
 	inputName.value = "";
 	typedBox.innerHTML = "";
 	nameRevealer.style.display = "";
@@ -104,16 +73,18 @@ function add() {
 	typedBox.innerHTML = firstCap(x);
 }
 
-// function picLink() {
-// 	var picId = this.attributes['data-img'].value;
-// 	var pic = document.getElementById(picId);
-// 	picId.style.display = "none";
-// 	dogID.style.display = "none";
-// 	catID.style.display = "none";
-// 	enterName.style.display = "block";
-// 	submitButton.style.display = "inline-block";
-// 	resetButton.style.display = "inline-block";
-// }
+function picToggle() {
+	var picId = this;
+	slothID.style.display = "none";
+	foxID.style.display = "none";
+	dogID.style.display = "none";
+	catID.style.display = "none";
+	enterName.style.display = "block";
+	submitButton.style.display = "inline-block";
+	resetButton.style.display = "inline-block";
+	picId.style.display = ""
+	picID.style.float = "left"
+}
 
 
 
