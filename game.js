@@ -1,3 +1,4 @@
+(function () {
 // function Animals (animal, name, action) {
 // 	this.animal = animal;
 // 	this.name = name;
@@ -15,6 +16,7 @@ var previousButton = document.getElementById("previousBtn");
 var enterName = document.getElementById("nameEntry");
 var nameRevealer = document.getElementById("nameReveal")
 var nextButton = document.getElementById("nextBtn");
+var head3Hide = document.querySelector("h3");
 
 
 slothID.addEventListener("click", picToggle);
@@ -24,7 +26,7 @@ catID.addEventListener("click", picToggle);
 
 
 submitButton.addEventListener("click", function() {
-	if (typedBox.innerHTML === "") {
+	if (nameString.innerHTML === "") {
 		alert("Please enter a name!");
 	} else {
 	nameRevealer.style.display = "block";
@@ -48,14 +50,15 @@ resetButton.addEventListener("click", function() {
 	resetButton.style.display = "none";
 	previousButton.style.display = "none";
 	inputName.value = "";
-	typedBox.innerHTML = "";
-	nextButton.style.display = "none";	
+	nameString.innerHTML = "";
+	nextButton.style.display = "none";
+	head3Hide.style.display	= "";
 })
 
 previousButton.addEventListener("click", function() {
 	previousButton.style.display = "none";
 	inputName.value = "";
-	typedBox.innerHTML = "";
+	nameString.innerHTML = "";
 	nameRevealer.style.display = "";
 	enterName.style.display = "block";
 	submitButton.style.display = "inline-block";
@@ -70,7 +73,7 @@ inputName.addEventListener("input", add);
 
 function add() {
 	var x = inputName.value;
-	typedBox.innerHTML = firstCap(x);
+	nameString.innerHTML = firstCap(x);
 }
 
 function picToggle() {
@@ -79,11 +82,12 @@ function picToggle() {
 	foxID.style.display = "none";
 	dogID.style.display = "none";
 	catID.style.display = "none";
+	head3Hide.style.display	= "none";
 	enterName.style.display = "block";
 	submitButton.style.display = "inline-block";
 	resetButton.style.display = "inline-block";
-	picId.style.display = ""
-	picID.style.float = "left"
+	picId.style.display = "";
+	picID.style.float = "left";
 }
 
 
@@ -164,3 +168,4 @@ function picToggle() {
 // }
 
 // console.log(invalid);
+}());
