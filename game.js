@@ -65,7 +65,7 @@ previousButton.addEventListener("click", function() {
 })
 
 function firstCap(str) {
-    var firstLetter = str.substr(0, 1);
+    var firstLetter = str.substr(0, 1); //charAt(0)
     return firstLetter.toUpperCase() + str.substr(1);
 }
 
